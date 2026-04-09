@@ -34,7 +34,7 @@ if radio_opt.index(selected_opt) == 1:
 else:
     db_url = LOCALDB
 
-api_key = os.getenv("GROQ_API_KEY")
+api_key = st.text_input("Goq API Key")
 
 if not db_url:
     st.info("Please select a database type and provide the necessary connection details.")
